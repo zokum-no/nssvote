@@ -1,0 +1,7 @@
+
+RewriteEngine  on
+RewriteCond   %{REQUEST_URI} !-U
+RewriteRule   ^(.+)          https://vote.samfunnet.no/$1
+
+RewriteRule ^([0-9-A-Za-z-]+)/?$                        /index.php?votekey=$1                     [L]
+
